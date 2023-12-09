@@ -1,0 +1,22 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC
+    username: bestuser
+    password: bestuser
+
+    management:
+      endpoints:
+        web:
+          exposure:
+            include: '*'
+
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#
+#  application:
+#    name: USER-SERVICE
